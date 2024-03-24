@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+}
+
+/* .container {
+    display: flex;
+    height: 100px;
+    width: 100vw;
+    flex-wrap: wrap;
+  
+
+} */
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fff;
+    align-items: flex-start;
+    width: 40%;
+    background-color: darkgoldenrod;
+}
+
+.left>.img {
+    background-color: #fff;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    border-radius: 20px;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img::after {
+    content: "?";
+    font-size: 8rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: purple;
+    transform: translate(-50%, -50%);
+}
+
+.img>.dot {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.span1 {
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background-color: purple;
+
+
+}
+
+
+
+
+.left .left-text {
+    padding: 2rem 2rem;
+
+}
+
+.left .left-text h1 {
+
+    font-size: 6rem;
+    line-height: 1.3;
+
+}
+
+.right {
+    display: flex;
+
+    flex-direction: column;
+
+    padding-left: 110px;
+    padding-top: 30px;
+
+    height: 100vh;
+    background-color: #fff;
+    width: 60%;
+
+}
+
+.right>.heading>h3 {
+    font-size: 2.7rem;
+}
+
+.right .input {
+    display: flex;
+    gap: 15px;
+
+}
+
+.right input {
+    margin-top: 40px;
+    height: 50px;
+    color: #fff;
+    width: 55%;
+    background-color: darkgoldenrod;
+    border: 3px solid black;
+    outline: none;
+    border-radius: 10px;
+    padding: 20px 20px;
+    font-size: 2rem;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+.right button {
+    margin-top: 40px;
+    width: 20%;
+    height: 50px;
+    border: 3px solid black;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 2rem;
+
+
+}
+
+.right .box {
+    height: 200px;
+    width: 82%;
+    display: flex;
+    gap: 20px;
+    margin-top: 80px;
+
+
+}
+
+.right .box .box1 {
+    
+    height: 190px;
+    background-color: darkgoldenrod;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.right .box .box1 h3{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.right .box .box1 h1{
+    font-size: 4rem;
+    color: purple;
+}
+
+.right .box .box1 h2{
+    font-size: 2.9rem;
+    text-align: center;
+    padding-top: 18px;
+    color: #fff;
+}
+
+.bot{
+    width: 82%;
+    height: 180px;
+    margin-top: 10px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkgoldenrod;
+}
+
+.bot h1{
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 15px;
+}
+
+.bot .value{
+    width: 90%;
+    height: 50px;
+   
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+
+.bot button{
+    width: 70%;
+    background-color: darkgoldenrod;
+    
+}
+
